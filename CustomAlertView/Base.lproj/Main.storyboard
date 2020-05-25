@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomAlertView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_click" translatesAutoresizingMaskIntoConstraints="NO" id="sSx-Sc-jGL">
+                                <rect key="frame" x="0.0" y="268.33333333333331" width="375" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sSx-Sc-jGL" secondAttribute="height" multiplier="375:194" id="sAd-rj-dUZ"/>
+                                    <constraint firstAttribute="height" constant="194" id="zqm-9q-hGc"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Td-mT-xY6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <connections>
+                                    <action selector="onTapCustomAlertButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IXS-wx-IEx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="9Td-mT-xY6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="B7T-1n-kbJ"/>
+                            <constraint firstItem="9Td-mT-xY6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="g5S-QD-7Ly"/>
+                            <constraint firstItem="9Td-mT-xY6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nqI-mk-pyW"/>
+                            <constraint firstItem="sSx-Sc-jGL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sV9-A8-gfd"/>
+                            <constraint firstItem="9Td-mT-xY6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vNi-Ob-NQx"/>
+                            <constraint firstItem="sSx-Sc-jGL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.9" id="xVW-ZE-ygu"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.00492610837438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="button_click" width="414" height="255"/>
+        <namedColor name="bg">
+            <color red="0.94499999284744263" green="0.97299998998641968" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

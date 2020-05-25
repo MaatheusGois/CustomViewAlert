@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person_000" translatesAutoresizingMaskIntoConstraints="NO" id="fs4-9b-Z5f">
+                                <rect key="frame" x="70" y="325" width="274" height="515"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fs4-9b-Z5f" secondAttribute="height" multiplier="274:515" id="dby-xo-7yw"/>
+                                </constraints>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <exclude reference="dby-xo-7yw"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alert" translatesAutoresizingMaskIntoConstraints="NO" id="0WU-Oa-uho">
+                                <rect key="frame" x="0.0" y="102.5" width="414" height="243"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Uw0-Fv-8Y5"/>
+                                    <constraint firstAttribute="width" secondItem="0WU-Oa-uho" secondAttribute="height" multiplier="46:27" id="s7I-Ak-bwU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="0WU-Oa-uho" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="0.5" id="NdU-MD-MO6"/>
+                            <constraint firstItem="fs4-9b-Z5f" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="PFv-sY-5tC"/>
+                            <constraint firstItem="fs4-9b-Z5f" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="1.5" id="T6g-wh-4F7"/>
+                            <constraint firstItem="fs4-9b-Z5f" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" multiplier="1.3" id="U2H-L3-Nqr"/>
+                            <constraint firstItem="fs4-9b-Z5f" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.661836" id="V5B-GM-Rr9"/>
+                            <constraint firstItem="fs4-9b-Z5f" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.574879" id="gN5-ky-IGq"/>
+                            <constraint firstItem="fs4-9b-Z5f" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gxx-Wu-ZjN"/>
+                            <constraint firstItem="fs4-9b-Z5f" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.574777" id="hW4-gt-Ruo"/>
+                            <constraint firstItem="0WU-Oa-uho" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="yOK-Qm-m1F"/>
+                            <constraint firstItem="fs4-9b-Z5f" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.141741" id="ykb-fK-0KW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PFv-sY-5tC"/>
+                                <exclude reference="T6g-wh-4F7"/>
+                                <exclude reference="gN5-ky-IGq"/>
+                                <exclude reference="ykb-fK-0KW"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="PFv-sY-5tC"/>
+                                <include reference="T6g-wh-4F7"/>
+                                <exclude reference="U2H-L3-Nqr"/>
+                                <exclude reference="V5B-GM-Rr9"/>
+                                <include reference="gN5-ky-IGq"/>
+                                <exclude reference="gxx-Wu-ZjN"/>
+                                <exclude reference="hW4-gt-Ruo"/>
+                                <include reference="ykb-fK-0KW"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alert" width="414" height="256"/>
+        <image name="person_000" width="237" height="456"/>
+        <namedColor name="bg">
+            <color red="0.94499999284744263" green="0.97299998998641968" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
