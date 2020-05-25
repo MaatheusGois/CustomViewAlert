@@ -7,7 +7,7 @@ This **CustomAlertView** a helper in your projects.
 
 ## Examples  
 - [Inspired in DrankoLQ code](https://github.com/DrankoLQ/CustomAlertView)
-- [Illustration by](https://www.freepik.com/pikisuperstar)
+- [Illustration by Pikisuperstar](https://www.freepik.com/pikisuperstar)
 
 ### Usage  
 
