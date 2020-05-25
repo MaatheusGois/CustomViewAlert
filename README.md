@@ -15,9 +15,9 @@ This **CustomAlertView** a helper in your projects.
 //in your ViewController
 self.showCustomAlert(
     title: "Título",
-    message: "Esse medium fala sobre as principais causas de errarmos quando fazemos as contas..."
-) { answer in
-    print(answer)
+    message: "Esse medium fala sobre as principais causas de errarmos quando fazemos as contas...",
+    isOneButton: false) { (answer) in
+        print(answer)
 }
 ```  
 ---

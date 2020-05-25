@@ -11,6 +11,7 @@ import UIKit
 public extension UIViewController {
     func showCustomAlert(title: String,
                          message: String,
+                         isOneButton: Bool,
                          withCompletion completion: @escaping (Bool) -> Void) {
         
         guard let customAlert = UIStoryboard(name: "CustomAlertView", bundle: nil)
@@ -18,14 +19,14 @@ public extension UIViewController {
             return
         }
         
-        customAlert.titleAlert = title
-        customAlert.messageAlert = message
-        
         customAlert.providesPresentationContextTransitionStyle = true
         customAlert.definesPresentationContext = true
         customAlert.modalPresentationStyle = .overCurrentContext
         customAlert.modalTransitionStyle = .crossDissolve
         
+        customAlert.titleAlert = title
+        customAlert.messageAlert = message
+        customAlert.isOneButton = isOneButton
         customAlert.comfirmMoreDidTap { (answer) in
             completion(answer)
         }

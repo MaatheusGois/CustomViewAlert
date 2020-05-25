@@ -16,9 +16,9 @@ class ViewController: UIViewController {
     @IBAction func onTapCustomAlertButton(_ sender: Any) {
         self.showCustomAlert(
             title: "Título",
-            message: "Esse medium fala sobre as principais causas de errarmos quando fazemos as contas..."
-        ) { answer in
-            print(answer)
+            message: "Esse medium fala sobre as principais causas de errarmos quando fazemos as contas...",
+            isOneButton: false) { (answer) in
+                print(answer)
         }
     }
 }
